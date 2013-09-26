@@ -1,9 +1,7 @@
-#!/bin/sh
+@echo off
 
 echo "# BUILD_DIR: \"$1\""
-cat << EOF
----
-addons: []
-default_process_types:
-  web: dummy
-EOF
+echo "---"
+echo "addons: []"
+echo "default_process_types:"
+echo "  web: dummy"
