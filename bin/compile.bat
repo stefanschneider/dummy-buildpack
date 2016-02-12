@@ -1,7 +1,10 @@
 @echo off
 
-echo -----> NOP
-echo BUILD_DIR: "%1"
-echo CACHE_DIR: "%2"
+echo CURRENT DIR: "%cd%" 1>&2
+echo BUILD_DIR:   "%1"   1>&2
+echo CACHE_DIR:   "%2"   1>&2
+echo -----^> NOP
 
-exit 0
+echo dummy-cache > %2\dummy-file.txt
+
+exit /b 0
